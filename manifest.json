@@ -1,0 +1,19 @@
+{
+    "name": "UniversityEsportOPGG",
+    "action": {},
+    "manifest_version": 3,
+    "version": "0.1",
+    "description": "Turns the page red when you click the icon",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://universityesports.fr/*"],
+            "js": ["inject.js"],
+            "run_at": "document_end"
+        }
+    ],
+"host_permissions": ["<all_urls>"]
+  }
