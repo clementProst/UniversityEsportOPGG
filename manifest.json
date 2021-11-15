@@ -1,12 +1,11 @@
 {
     "name": "UniversityEsportOPGG",
-    "action": {},
     "manifest_version": 3,
     "version": "0.1",
-    "description": "Turns the page red when you click the icon",
+    "description": "Add a link to OP.GG on University Esport match pages",
     "permissions": [
-      "activeTab",
-      "scripting"
+        "activeTab",
+        "scripting"
     ],
     "content_scripts": [
         {
@@ -15,5 +14,5 @@
             "run_at": "document_end"
         }
     ],
-"host_permissions": ["<all_urls>"]
-  }
+    "host_permissions": ["https://universityesports.fr/*"]
+}
